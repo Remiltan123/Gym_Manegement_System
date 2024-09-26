@@ -1,0 +1,25 @@
+.navbar{
+    color: black;
+    display: flex; 
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar div{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar  h4{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.Admin{
+    margin-bottom: 1px;
+    margin-top: -20px;
+    text-align: center;
+    margin-right: 20px;
+}
+.welcome{
+    margin-right: 25px;
+}
+
