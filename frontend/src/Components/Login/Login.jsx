@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import gym from '../../Assets/GYM1.png';
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
   const [state, SetState] = useState("Login");
+  const navigate = useNavigate();
 
   const [formdata, SetFormdata] = useState({
     name: "",
@@ -69,6 +71,7 @@ export const Login = () => {
       if (response.ok) {
         const message = await response.text(); 
         alert(message);
+        navigate('/AdminControll')
         // You might want to redirect or store some login state here
       } else {
         const errorMessage = await response.text(); // Get error message from response

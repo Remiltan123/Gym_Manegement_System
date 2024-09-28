@@ -1,0 +1,28 @@
+.sidebar-contianer{
+    background-color: rgba(0, 0, 0, 0.831);
+    color: white;
+    width: fit-content;
+    padding: 10px 20px;
+    height: 100vh;
+}
+.sidebar-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.sidebar-ul li{
+    display: flex;
+    gap: 10px;
+    background-color: rgb(119, 0, 255);
+    padding: 20px 20px;
+    margin-right: 10px;
+}
+.sidebar-ul span{
+    margin-top: -5px;
+}
+.sidebar-ul li:hover{
+    box-shadow: 10px 10px 5px;
+}
+
