@@ -71,7 +71,8 @@ export const Login = () => {
       if (response.ok) {
         const message = await response.text(); 
         alert(message);
-        navigate('/AdminControll')
+        navigate('/Admin')
+        
         // You might want to redirect or store some login state here
       } else {
         const errorMessage = await response.text(); // Get error message from response

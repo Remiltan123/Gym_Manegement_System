@@ -1,0 +1,18 @@
+.AdminAction {
+    display: flex;
+    height: 100vh; /* Full height of viewport */
+}
+
+.Admin-Sidebar {
+    width: 250px; /* Sidebar width */
+    background-color: rgba(0, 0, 0, 0.7); /* Customize the sidebar background */
+    padding: 20px;
+    color: white;
+    height: 100%; /* Sidebar height should match the height of the container */
+}
+
+.RouteContainer {
+    flex-grow: 1; /* Take up remaining space next to the sidebar */
+    padding: 20px;
+    background-color: #f8f9fa; /* Optional: background color for the content area */
+}

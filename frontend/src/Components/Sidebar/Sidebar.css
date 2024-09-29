@@ -1,9 +1,12 @@
 .sidebar-contianer{
-    background-color: rgba(0, 0, 0, 0.831);
+    background-color: rgba(0, 0, 0, 0.813);
     color: white;
     width: fit-content;
     padding: 10px 20px;
     height: 100vh;
+    top: 12.3%;
+
+    
 }
 .sidebar-ul{
     display: flex;
@@ -15,14 +18,33 @@
 .sidebar-ul li{
     display: flex;
     gap: 10px;
-    background-color: rgb(119, 0, 255);
-    padding: 20px 20px;
+    background-color: rgb(86, 126, 161);
+   
+    padding: 15px 20px;
     margin-right: 10px;
 }
 .sidebar-ul span{
     margin-top: -5px;
 }
 .sidebar-ul li:hover{
-    box-shadow: 10px 10px 5px;
+    background-color: rgb(53, 50, 50);
 }
 
+.non-active {
+    text-decoration: none;
+    color: white;
+}
+
+.active-link {
+    text-decoration: none;
+}
+
+.active-link li {
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    transform: scale(1.05);
+}
+.active-link li:hover{
+    background-color: white;
+}
