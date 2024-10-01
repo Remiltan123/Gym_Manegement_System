@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/Admin")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin()
 public class GymAdminController {
 
     private GymAdminService gymAdminService;
