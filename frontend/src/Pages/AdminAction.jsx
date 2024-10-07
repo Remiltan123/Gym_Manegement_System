@@ -7,6 +7,7 @@ import { AddTrainer } from '../Components/AddTrainer/AddTrainer'
 import { AddPayment } from '../Components/AddPayment/AddPayment'
 import { AddEquipment } from '../Components/AddEquipment/AddEquipment'
 import { Homepage } from './Homepage'
+import { SearchMember } from '../Components/SearchMember/SearchMember'
 
 export const AdminAction = () => {
   return (
@@ -16,6 +17,7 @@ export const AdminAction = () => {
           <Route path='Trainer' element={<AddTrainer />} />
           <Route path='Payment' element={<AddPayment />} />
           <Route path='Equipment' element={<AddEquipment />} />
+          <Route path='SearchMember' element={<SearchMember/>}/>
           <Route path='/AdminLogin' element={<Homepage />} />
         </Routes>
       </div>

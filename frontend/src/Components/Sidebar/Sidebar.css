@@ -3,7 +3,7 @@
     color: white;
     width: fit-content;
     padding: 10px 20px;
-    height: 100vh;
+    height: fit-content;
     top: 12.3%;
 
     
@@ -48,3 +48,4 @@
 .active-link li:hover{
     background-color: white;
 }
+

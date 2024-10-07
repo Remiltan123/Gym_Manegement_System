@@ -1,0 +1,33 @@
+.Member-Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.continer{
+    margin-top: 20px;
+}
+
+.Action-buttons{
+    direction: flex;
+    gap:10px;
+   
+}
+.Action-buttons th{
+  cursor: pointer;
+}
+.edit-icon, .delete-icon{
+    height: 20px;
+    width: 20px;
+
+}
+.delete-icon{
+    margin-left: 10px;
+}
+.Member-Search-Div{
+    width: 50%;
+    margin-top: 10px;
+}
+.form-control me-2{
+    border: 1px solid blue;
+    background-color: blanchedalmond;
+}
