@@ -33,4 +33,10 @@ public class GymMemberServiceImpl implements GymMemberService {
         return gymMemberRepository.findById(id)
                 .orElseThrow(()-> new RuntimeException("member not found with id" + id));
     }
+
+    @Override
+    public void DeleteMember(Long id) {
+        gymMemberRepository.findById(id).orElseThrow(()-> new RuntimeException("member not found with id" + id));
+        gymMemberRepository.deleteById(id);
+    }
 }

@@ -9,4 +9,7 @@ public interface GymMemberService {
     List<Member> GetAllMember ();
 
     Member GitOneMember (Long id);
+
+    void DeleteMember (Long id);
+
  }

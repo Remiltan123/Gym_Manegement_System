@@ -38,4 +38,11 @@ public class GymMemberController {
     public ResponseEntity<Member> findMemberById (@PathVariable("id")  Long id){
         return new ResponseEntity<>(gymMemberService.GitOneMember(id), HttpStatus.OK);
     }
+
+    @DeleteMapping("/RemoveMember/{id}")
+    public ResponseEntity<String> DeleteMember (@PathVariable("id") Long id){
+        gymMemberService.DeleteMember(id);
+        return new ResponseEntity<>("Deleted Succesfully", HttpStatus.OK);
+    }
+
 }
