@@ -54,6 +54,27 @@ export const SearchMember = () => {
     }
   };
 
+  const deleteMember = async(id)=>{
+    try{
+      const response = await fetch(`http://localhost:8080/RemoveMember/${id}`,{
+        method:"DELETE",
+        headers:{
+          'Content-Type':'application/json'
+        }
+      })
+      if(response.ok){
+        alert("Deleted succesfully")
+        feachMember();
+
+      }else{
+        alert("Member not found")
+      }
+
+    }catch(err){
+      console.error(err)
+    }
+  }
+
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -106,7 +127,7 @@ export const SearchMember = () => {
                 <td>{Onemember.workDay}</td>
                 <td className='Action-buttons'>
                   <FaEdit className='edit-icon' />
-                  <MdDelete className='delete-icon' />
+                  <MdDelete className='delete-icon'/>
                 </td>
               </tr>
             </tbody>
@@ -139,7 +160,7 @@ export const SearchMember = () => {
                   <td>{member.workDay}</td>
                   <td className='Action-buttons'>
                     <FaEdit className='edit-icon' />
-                    <MdDelete className='delete-icon' />
+                    <MdDelete className='delete-icon'  onClick={()=>{deleteMember(member.id)}}/>
                   </td>
                 </tr>
                 )
